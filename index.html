@@ -7,60 +7,131 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <!-- header / nav (from JS?) -->
+    <header>
+        <nav>
+            <h1 class="heading">epic website 😎</h1>
+            <ul>
+                <li class="link intro"><a href="#intro-nav">Introduction</a></li>
+                <li class="link projects"><a href="#projects-nav">Projects</a></li>
+                <li class="link about"><a href="#about-nav">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h1>Hello, my name is Ola</h1>
+    <main>
+        <section class="intro" id="intro-nav">
+            <h2 class="heading">Introduction</h2>
+            <p>Hello, my name is Ola</p>
+            <p>I'm a fullstack web developer with particular interest in backend development and scripting.</p>
+            <div class="technologies partial">
+                <h3>Primary Technologies</h3>
+                <div class="icon"><img src="./Assets/Logos/html-icon.svg" alt="">HTML</div>
+                <div class="icon"><img src="./Assets/Logos/javascript-icon.svg" alt="">JS</div>
 
-    <section class="intro">
-        <h2>Introduction</h2>
-        <p>I'm a web developer with particular interest in backend development and scripting.</p>
-        <!-- partial technology list + icons -->
-        <div class="technologies partial">
-            <div>HTML</div>
-            <div>CSS</div>
-            <div>JS</div>
-            <div>MongoDB</div>
-            <div>Express</div>
-            <div>React</div>
-            <div>Node</div>
-        </div>
-    </section>
+                <div class="icon"><img src="./Assets/Logos/node.js-icon.svg" alt="">Node</div>
+                <div class="icon"><img src="./Assets/Logos/express.js-icon.svg" alt="">Express</div>
+                <div class="icon"><img src="./Assets/Logos/mongodb-icon.svg" alt="">MongoDB</div>
+                <div class="icon"><img src="./Assets/Logos/react-icon.svg" alt="">React</div>
 
-    <section class="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3 class="project-name">Duck Hunt</h3>
-            <!-- project-image -->
-            <div class="project-contents">
-                <p class="description">Advanced CSS assignment</p>
-                <!-- organized by relevance? -->
-                <div class="technologies">
-                    <p>CSS</p>
-                    <p>HTML</p>
-                </div>
-                <div class="links">
-                    <p class="link live">Link to live demo/deployment</p>
-                    <p class="link source">Link to source code (when available/public)</p>
+                <div class="icon"><img src="./Assets/Logos/github-icon.svg" alt="">GitHub</div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects-nav">
+            <h2 class="heading">Projects</h2>
+            <div class="project">
+                <div class="project-container">
+                    <div class="project-information">
+                        <h3 class="heading project-name">Andejakt</h3>
+                        <div class="description">
+                            <p class="background">One of the obligatory assignments for the Advanced CSS course. The purpose of the assignment was to test our creativity by creating a game only using CSS and HTML.</p>
+                            <p class="process">We originally wanted to make a <span class="italic">rock, paper, scissors</span class="italic"> game, but since that would've required some amount of JavaScript to function properly, we scrapped the idea fairly early on. We instead settled on making a variation of the NES game "Duck Hunt". This is a game concept that works just fine with no scripting &ndash; the only required interaction is clicking entities on the screen, which can be achieved by styling HTML checkboxes. The primary constraint for the assignment was that we had to use minimal, if any, JavaScript.</p>
+                        </div>
+                        <div class="technologies">
+                            <h4 class="heading">Technologies</h4>
+                            <div class="icon"><img src="./Assets/Logos/css-icon.svg" alt="">CSS</div>
+                            <div class="icon"><img src="./Assets/Logos/html-icon.svg" alt="">HTML</div>
+                        </div>
+
+                        <h4 class="heading">Links</h4>
+                        <div class="links">
+                            <div class="icon link live"><img src="./Assets/Logos/live-deployment-icon.svg" alt=""><a href="https://simeel.folk.ntnu.no/Access/CSS-game-1-2023/index.html">Link to live webpage</a></div>
+                            <div class="icon link live"><img src="./Assets/Logos/github-icon.svg" alt=""><a href="https://github.com/AdvancedCSS2023/assignment-2---css-games-group_11">Link to source code</a></div>
+                        </div>
+
+                        <div class="collaborators">
+                            <h4 class="heading">Collaborators</h4>
+                            <!-- <a href="" class="collaborator">Simen Elvhaug</a> -->
+                            <span class="collaborator">Simen Elvhaug</span>
+                        </div>
+                    </div>
+        
+                    <!-- project-image(s) -->
+                    <img src="./Assets/Images/andejakt-game.png" alt="ducks">
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="about">
-        <h2>About Me</h2>
-        <!-- full technology list + icons -->
-        <div class="technologies partial">
-            <div>HTML</div>
-            <div>CSS</div>
-            <div>JS</div>
-            <div>MongoDB</div>
-            <div>Express</div>
-            <div>React</div>
-            <div>Node</div>
-            <div>etc</div>
-        </div>
-    </section>
+            <div class="project">
+                <h3 class="heading project-name">name</h3>
+                <!-- project-image(s) -->
+                <div class="project-information">
+                    <div class="description">
+                        <p class="background"></p>
+                        <p class="process"></p>
+                    </div>
+                    <!-- organized by relevance? -->
+                    <div class="technologies">
+                        <p>tech1</p>
+                        <p>tech2</p>
+                    </div>
+                    <div class="links">
+                        <p class="link live">live link</p>
+                        <p class="link source">code link</p>
+                    </div>
+                    <div class="collaborators">
+                        <a href="" class="collaborator">Col1</a>
+                    </div>
+                </div>
+            </div>
 
+        </section>
+
+        <section class="about" id="about-nav">
+            <h2 class="heading">About Me</h2>
+            <!-- full technology list + icons -->
+            <div class="technologies full">
+                <h3>All Technologies</h3>
+                <div class="icon"><img src="./Assets/Logos/html-icon.svg" alt="">HTML</div>
+                <div class="icon"><img src="./Assets/Logos/css-icon.svg" alt="">CSS</div>
+                <div class="icon"><img src="./Assets/Logos/javascript-icon.svg" alt="">JS</div>
+                <div class="icon"><img src="./Assets/Logos/mongodb-icon.svg" alt="">MongoDB</div>
+                <div class="icon"><img src="./Assets/Logos/express.js-icon.svg" alt="">Express</div>
+                <div class="icon"><img src="./Assets/Logos/react-icon.svg" alt="">React</div>
+                <div class="icon"><img src="./Assets/Logos/node.js-icon.svg" alt="">Node</div>
+                <div class="icon"><img src="./Assets/Logos/github-icon.svg" alt="">GitHub</div>
+                <div class="icon"><img src="./Assets/Logos/git-icon.svg" alt="">Git</div>
+                <div class="icon"><img src="./Assets/Logos/gitlab-icon.svg" alt="">GitLab</div>
+                <div class="icon"><img src="./Assets/Logos/mysql-icon.svg" alt="">MySQL</div>
+                <div class="icon"><img src="./Assets/Logos/c-sharp-icon.svg" alt="">C#</div>
+                <div class="icon"><img src="./Assets/Logos/python-icon.svg" alt="">Python</div>
+                <div class="icon"><img src="./Assets/Logos/bash-icon.svg" alt="">Bash</div>
+                <div class="icon"><img src="./Assets/Logos/sass-icon.svg" alt="">Sass</div>
+                <div class="icon"><img src="./Assets/Logos/figma-icon.svg" alt="">Figma</div>
+                <div class="icon"><img src="./Assets/Logos/docker-icon.svg" alt="">Docker</div>
+                <div class="icon"><img src="./Assets/Logos/php-icon.svg" alt="">PHP</div>
+                <div class="icon"><img src="./Assets/Logos/" alt=""></div>
+                <div class="icon"><img src="./Assets/Logos/" alt=""></div>
+            </div>
+        </section>
+    </main>
     <!-- footer (from JS?) -->
+    <script defer>
+        window.addEventListener("hashchange", function() { scrollBy(0, -70) });
+        window.addEventListener("scroll", () => {
+            if (window.scrollY === 0 && window.location.hash) {
+                history.replaceState(null, null, window.location.pathname);
+            }
+        });
+    </script>
 </body>
 </html>

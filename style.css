@@ -1,3 +1,150 @@
-body {
-    background-color: gray;
+/* Variables */
+:root {
+    --header-bg-color: #cfd8dc;
+    --page-bg-color: #f5f5f5;
+    --nav-link-color: #0d47a1;
+    --project-card-bg-color: #fff;
+    --running-text-size: 20px;
+    --link-icon-size: 25px;
 }
+
+
+* {
+    /* outline: 1px solid red; */
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: var(--page-bg-color);
+}
+
+/* Headings */
+.heading {
+    font-family: Consolas, 'Courier New', monospace;
+    margin-bottom: 0.3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+
+main {
+    margin: 1rem 5rem;
+}
+
+
+/* Navbar */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 5000;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: var(--header-bg-color);
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav li {
+    padding-left: 1rem;
+}
+nav a {
+    text-decoration: none;
+    color: var(--nav-link-color);
+}
+
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.icon > img {
+    height: var(--running-text-size);
+    aspect-ratio: 1;
+}
+
+
+img {
+    max-width: 50%;
+}
+.project img {
+    border-radius: 4px;
+}
+
+.project-container {
+    display: flex;
+    gap: 1rem;
+}
+.project {
+    margin-bottom: 1rem;
+    background: var(--project-card-bg-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.project-information > div {
+    margin-bottom: 2rem;
+}
+.project .links {
+    display: flex;
+}
+.icon.link > img {
+    height: var(--link-icon-size);
+}
+.icon.link {
+    margin-right: 1rem;
+}
+
+p:last-of-type, .project p {
+    margin-bottom: 1rem;
+}
+
+.italic {
+    font-style: italic;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media queries */
+@media only screen and (max-width: 600px) {
+    nav {
+      flex-direction: column;
+    }
+    nav ul {
+      flex-direction: column;
+      padding-top: 0.5rem;
+    }
+    nav li {
+      padding: 0.5rem 0;
+    }
+
+    /* 182 */
+  } 
